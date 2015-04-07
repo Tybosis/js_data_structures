@@ -10,25 +10,25 @@ describe('Stack', function() {
   it('should have a push method that adds a new node', function() {
     var stack = new Stack();
     stack.push('hello world');
-    expect(stack.head).to.equal('hello world');
+    expect(stack.head.value).to.equal('hello world');
   }),
 
   it('most recent pushed item should be the new head', function() {
     var stack = new Stack();
     stack.push('second');
     stack.push('first');
-    expect(stack.head).to.equal('first');
+    expect(stack.head.value).to.equal('first');
   }),
 
-  it('has a pop method that returns the head(top) element', function() {
+  it('has a pop method that removes the head(top) element', function() {
     var stack = new Stack();
     stack.push('first');
-    expect(stack.pop()).to.equal('first');
+    expect(stack.pop().value).to.equal('first');
     expect(stack.head).to.equal(null);
   }),
 
-  it('pop return an error if the stack is empty', function() {
+  it('pop returns an error if the stack is empty', function() {
     var stack = new Stack();
-    expect(stack.pop()).to.equal('RangeError');
+    expect(stack.pop.bind(stack)).to.throw(RangeError);
   });
 });
