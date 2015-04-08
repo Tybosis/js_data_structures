@@ -7,7 +7,7 @@ describe('Stack', function() {
     expect(stack).to.have.property('head').that.equals(null);
   }),
 
-  it('should have a push method that adds a new node', function() {
+  it('should have a push method that a dds a new node', function() {
     var stack = new Stack();
     stack.push('hello world');
     expect(stack.head.value).to.equal('hello world');
