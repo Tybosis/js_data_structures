@@ -45,6 +45,15 @@ describe('LinkedList', function() {
     expect(linked.search('B')).to.equal(null);
   }),
 
+  it('remove should work at the end of the list', function() {
+    var linked = new LinkedList();
+    linked.insert('C');
+    linked.insert('B');
+    linked.insert('A');
+    linked.remove('C');
+    expect(linked.search('C')).to.equal(null);
+  }),
+
   it('should have a toString method', function() {
     var linked = new LinkedList();
     linked.insert('D');
