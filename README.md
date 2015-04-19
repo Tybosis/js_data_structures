@@ -15,5 +15,15 @@ above, as well as this youtube video on [creating linked lists is JS](https://ww
 
 ### Stack
 
-The stack.js file contains my implementation of a [stack](http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29) in JavaScript,
-with push and pop methods.
+The stack.js file contains my implementation of a [stack](http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29) with push and pop methods.
+
+### Binary Search Tree
+
+The binary_search_tree.js file contains my implementation of a [binary search tree](http://en.wikipedia.org/wiki/Binary_search_tree) with an insert method and a contains method
+which takes a number as an argument, and returns true if the BST contains that
+number, and false if it does not.  There is also a depth function that returns
+a number corresponding to the number of levels in the BST.  The BST also has
+attributes which keep track of the size of the BST(aka the number of nodes), and
+the balance of the BST(0 if there are an eqaul number of left and right nodes,
+a positive integer if there are more left nodes, and a negative number if there
+are more right nodes).
