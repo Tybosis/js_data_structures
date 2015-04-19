@@ -14,7 +14,7 @@ describe('BinarySearchTree', function() {
   it('has an insert method that inserts a new val', function() {
     tree.insert(5);
     tree.insert(15);
-    expect(tree.root.val).to.equal(5)
+    expect(tree.root.val).to.equal(5);
     expect(tree.root.right.val).to.equal(15);
   }),
 
